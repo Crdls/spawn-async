@@ -1,8 +1,16 @@
 const {spawn} = require('child_process');
 
 module.exports = async (command, options, callback) => {
-    const params = command.split(' ');
-    let run = params.shift();
+    let params = []
+    let run = '';
+
+    if (Array.isArray(command)) {
+        run = command.shift();
+        params = command;
+    } else {
+        params = command.split(' ');
+        run = params.shift();
+    }
 
     // to run tsc and npm on win and linux with same command
     if ((run === 'npm' || run === 'tsc') && /^win/.test(process.platform)) {
