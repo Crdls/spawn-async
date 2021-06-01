@@ -13,7 +13,7 @@ module.exports = async (command, options, callback) => {
         callback = (data, err) => err ? process.stderr.write(data) : process.stdout.write(data);
     }
 
-    if (typeof options === string) {
+    if (typeof options === 'string') {
         options = {cwd: options};
     }
 
