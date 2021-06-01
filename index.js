@@ -13,6 +13,10 @@ module.exports = async (command, options, callback) => {
         callback = (data, err) => err ? process.stderr.write(data) : process.stdout.write(data);
     }
 
+    if (typeof options === string) {
+        options = {cwd: options};
+    }
+
     const output = [];
     try {
         const com = spawn(run, params, options);
