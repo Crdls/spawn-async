@@ -1,0 +1,20 @@
+{
+  "name": "spawn-async",
+  "version": "1.0.0",
+  "description": "Simple wrapper for spawn() function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Crdls",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crdls/spawn-async.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Crdls/spawn-async/issues"
+  },
+  "homepage": "https://github.com/Crdls/spawn-async#readme"
+}
