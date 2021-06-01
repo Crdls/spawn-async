@@ -1,10 +1,10 @@
 # Spawn async
 Simple wrapper for spawn() function.  
   
-Minimal usage:
+Usage sample:
 ```
 const spawnAsync = require('spawn-async');
-spawnAsync('git status');
+spawnAsync('git status', {cwd: 'repo-dir'}, (text, err) => console.log(text));
 ```
 
 ## Function atttributes
@@ -16,6 +16,6 @@ https://nodejs.org/api/child_process.html#child_process_child_process_exec_comma
 
 ## Callback
 function (out, err)  
-- *out* - text output of called command
+- *text* - text output of called command
 - *err* - boolean, indicates if error occured
 
