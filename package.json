@@ -1,6 +1,6 @@
 {
   "name": "spawn-inline",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple wrapper for spawn() function.",
   "main": "index.js",
   "scripts": {
