@@ -1,5 +1,5 @@
 {
-  "name": "spawn-async",
+  "name": "spawn-inline",
   "version": "1.0.0",
   "description": "Simple wrapper for spawn() function.",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Crdls/spawn-async.git"
   },
   "bugs": {
-    "url": "https://github.com/Crdls/spawn-async/issues"
+    "url": "https://github.com/Crdls/spawn-inline/issues"
   },
-  "homepage": "https://github.com/Crdls/spawn-async#readme"
+  "homepage": "https://github.com/Crdls/spawn-inline#readme"
 }
