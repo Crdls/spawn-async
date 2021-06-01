@@ -29,8 +29,8 @@ Spawn-inline return an array filled with output lines.
 ## Bugs
 Be aware, that if *command* attribute is string, it is splitted by split(' '), so if you have spaces in your parameters values (e.g. commit message) you'll need to use array-style command.
 ```
-await spawnInline('git commit -a -m"My new commit"'); // - will result in error (caused by splitting "My new commit" string)
-await spawnInline(['git', 'commit', '-a', '-m"My new commit"']); // - will do the job traditional way
+await spawnInline('git commit -a -mMy new commit'); // - will result in error (caused by splitting "My new commit" string)
+await spawnInline(['git', 'commit', '-a', '-mMy new commit']); // - will do the job traditional way
 
 ``` 
 
