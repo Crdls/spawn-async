@@ -25,6 +25,8 @@ module.exports = async (command, options, callback) => {
         options = {cwd: options};
     }
 
+    options.shell = true;
+
     const output = [];
     try {
         const com = spawn(run, params, options);
